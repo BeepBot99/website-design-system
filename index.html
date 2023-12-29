@@ -130,6 +130,15 @@ h6 {
     transition-timing-function: ease-out; /* Fast, abrupt start, slows down to a stop at the end */
     transition-timing-function: linear; /* Same speed the entire transition */
 }            </code>
+             <h3>Sizing An Image To The Size Of Its Container</h3>
+             <code class="codeblock">.container {
+    overflow: hidden;
+}
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}            </code>
         </section>
         <h2>Grid Properties</h2>
         <section>
