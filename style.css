@@ -1,0 +1,157 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #191F38;
+    --secondary-color: #F2F5F8;
+}
+
+body {
+    font-family: 'Roboto Mono', Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    background-color: var(--secondary-color);
+    font-size: 16px;
+    margin: 0;
+}
+
+.content {
+    padding: 4rem 0.75rem 0 0.75rem;
+}
+
+section {
+    border-left: 2px solid var(--primary-color);
+    margin: 0 2.25rem 0 2.25rem;
+    padding-left: 2.25rem;
+}
+
+/* Navbar Styles */
+nav {
+    width: 100%;
+    height: 4rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem 0 0.75rem;
+    z-index: 2;
+}
+
+nav span {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Color Section Styles*/
+.color-theme[data-theme=light] {
+    --primary-color-local: var(--primary-color);
+    --secondary-color-local: white;
+}
+
+.color-theme[data-theme=dark] {
+    --primary-color-local: var(--secondary-color);
+    --secondary-color-local: black;
+}
+
+.color-theme {
+    position: relative;
+    display: flex;
+    border: 1px solid var(--primary-color-local);
+    height: 5rem;
+    align-items: center;
+    justify-content: stretch;
+    background-color: var(--secondary-color-local);
+    color: var(--primary-color-local);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.color-container {
+    flex-grow: 1;
+    height: 100%;
+    padding: 0.75rem;
+    display: flex;
+}
+
+.color {
+    flex-grow: 1;
+    border: 1px solid var(--primary-color-local);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Code Snippet Styles */
+code {
+    background-color: black;
+    color: var(--secondary-color);
+    padding: 0.7rem;
+    overflow-x: auto;
+    display: block;
+    border-radius: 5px;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #989898 #AEC2D3;
+}
+
+code.codeblock {
+    white-space: pre;
+}
+
+code.inline {
+    display: inline;
+    padding: 0.25rem;
+}
+
+code::-webkit-scrollbar {
+    height: 6px;
+    width: 6px;
+}
+
+code::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #AEC2D3;
+}
+
+code::-webkit-scrollbar-track:hover {
+    background-color: #AEC2D3;
+}
+
+code::-webkit-scrollbar-track:active {
+    background-color: #AEC2D3;
+}
+
+code::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #989898;
+}
+
+code::-webkit-scrollbar-thumb:hover {
+    background-color: #425773;
+}
+
+code::-webkit-scrollbar-thumb:active {
+    background-color: #425773;
+}
+
+.sans-serif {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.rounded-sans {
+    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+}
+
+.serif {
+    font-family: "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.georgia {
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.mono {
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
