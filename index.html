@@ -6,7 +6,7 @@
     <title>Davis's Design System</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
 </head>
 <body>
     <nav>
@@ -90,7 +90,7 @@
         <h2>Styles</h2>
         <section>
             <h3>Use Everywhere</h3>
-            <pre><code class="codeblock">* {
+            <pre class="prettyprint"><code class="codeblock lang-css">* {
     box-sizing: border-box;
 }
 body {
@@ -98,14 +98,14 @@ body {
     font-size: 16px;
 }           </code></pre>
             <h3>Center Child Element(s)</h3>
-            <code class="codeblock">.container {
+            <pre class="prettyprint"><code class="codeblock lang-css">.container {
     display: flex;
     justify-content: center; /* Horizontally */
     align-items: center; /* Vertically */
     flex-direction: column; /* Only for multiple child elements stacked vertically */
-}           </code>
+}           </code></pre>
             <h3>Default Font Sizes</h3>
-            <code class="codeblock">h1 {
+            <pre class="prettyprint"><code class="codeblock lang-css">h1 {
     font-size: 2em;
 }
 h2 {
@@ -122,24 +122,24 @@ h5 {
 }
 h6 {
     font-size: 0.7em;
-}           </code>
+}           </code></pre>
             <h3>Transition Timing Functions</h3>
-            <code class="codeblock">.div {
+            <pre class="prettyprint"><code class="codeblock lang-css">.div {
     transition-timing-function: ease; /* Default value, starts slow, fast in the middle, ends slow */
     transition-timing-function: ease-in-out; /* Like ease but more smooth */
     transition-timing-function: ease-in; /* Starts slow, then fast, then abrupt stop at the end */
     transition-timing-function: ease-out; /* Fast, abrupt start, slows down to a stop at the end */
     transition-timing-function: linear; /* Same speed the entire transition */
-}            </code>
+}            </code></pre>
              <h3>Sizing An Image To The Size Of Its Container</h3>
-             <code class="codeblock">.container {
+             <pre class="prettyprint"><code class="codeblock lang-css">.container {
     overflow: hidden;
 }
 .container img {
     max-width: 100%;
     height: auto;
     display: block;
-}            </code>
+}            </code></pre>
         </section>
         <h2>Grid Properties</h2>
         <section>
