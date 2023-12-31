@@ -85,7 +85,7 @@ nav span {
 
 /* Code Snippet Styles */
 code {
-    background-color: black;
+    background-color: black !important;
     color: var(--secondary-color);
     padding: 0.7rem;
     overflow-x: auto;
@@ -96,8 +96,8 @@ code {
     scrollbar-color: #989898 #AEC2D3;
 }
 
-code.codeblock {
-    white-space: pre;
+pre {
+    padding: 0 !important;
 }
 
 code.inline {
@@ -106,8 +106,8 @@ code.inline {
 }
 
 code::-webkit-scrollbar {
-    height: 6px;
-    width: 6px;
+    height: 7px;
+    width: 7px;
 }
 
 code::-webkit-scrollbar-track {
@@ -125,7 +125,7 @@ code::-webkit-scrollbar-track:active {
 
 code::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: #989898;
+    background-color: #474747;
 }
 
 code::-webkit-scrollbar-thumb:hover {
@@ -135,6 +135,8 @@ code::-webkit-scrollbar-thumb:hover {
 code::-webkit-scrollbar-thumb:active {
     background-color: #425773;
 }
+
+/* Font Preview Styles */
 
 .sans-serif {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

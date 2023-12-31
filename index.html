@@ -6,7 +6,8 @@
     <title>Davis's Design System</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sons-of-obsidian"></script>
+    <script src="prism.js/prism.js" defer></script>
+    <link rel="stylesheet" href="prism.js/prism.css">
 </head>
 <body>
     <nav>
@@ -70,27 +71,27 @@
         <section>
             <h3>Sans Serif</h3>
             <p class="sans-serif">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor sequi exercitationem expedita voluptates aperiam tempora quam, recusandae minus repellat fuga numquam ducimus amet reiciendis eos.</p>
-            <code>font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";</code>
+            <pre><code class="language-css">font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
             <h3>Rounded Sans</h3>
             <p class="rounded-sans">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores hic quaerat harum, quibusdam inventore nam animi obcaecati cumque porro officia eos doloremque. Dolor, explicabo provident!</p>
-            <code>font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;            </code>
+            <pre><code class="language-css">font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;</code></pre>
             <h3>Serif</h3>
             <p class="serif">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit inventore explicabo accusamus architecto deserunt quidem nihil odio reiciendis est expedita, eos, iusto porro obcaecati soluta!</p>
-            <code>font-family: "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";</code>
+            <pre><code class="language-css">font-family: "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
             <h3>Georgia</h3>
             <p class="georgia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempore, error nam dolore rem necessitatibus odit animi laboriosam ratione ut odio iusto quaerat sint incidunt.</p>
-            <code>font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;</code>
+            <pre><code class="language-css">font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;</code></pre>
             <h3>Monospace</h3>
             <p class="mono">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, perferendis ipsa officiis reprehenderit rem recusandae necessitatibus non possimus dolor inventore sapiente repellat, saepe atque pariatur.</p>
-            <code>font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;</code>
+            <pre><code class="language-css">font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;</code></pre>
             <h3>Roboto Mono</h3>
             <p class="roboto-mono">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis ducimus nostrum repellat! Sed ab officia vitae deleniti molestiae aspernatur ipsam eveniet dolor! Adipisci, obcaecati.</p>
-            <code>font-family: 'Roboto Mono', Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;</code>
+            <pre><code class="language-css">font-family: 'Roboto Mono', Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;</code></pre>
         </section>
         <h2>Styles</h2>
         <section>
             <h3>Use Everywhere</h3>
-            <pre class="prettyprint"><code class="codeblock lang-css">* {
+            <pre><code class="codeblock language-css">* {
     box-sizing: border-box;
 }
 body {
@@ -98,14 +99,14 @@ body {
     font-size: 16px;
 }           </code></pre>
             <h3>Center Child Element(s)</h3>
-            <pre class="prettyprint"><code class="codeblock lang-css">.container {
+            <pre><code class="codeblock language-css">.container {
     display: flex;
     justify-content: center; /* Horizontally */
     align-items: center; /* Vertically */
     flex-direction: column; /* Only for multiple child elements stacked vertically */
 }           </code></pre>
             <h3>Default Font Sizes</h3>
-            <pre class="prettyprint"><code class="codeblock lang-css">h1 {
+            <pre><code class="codeblock language-css">h1 {
     font-size: 2em;
 }
 h2 {
@@ -124,7 +125,7 @@ h6 {
     font-size: 0.7em;
 }           </code></pre>
             <h3>Transition Timing Functions</h3>
-            <pre class="prettyprint"><code class="codeblock lang-css">.div {
+            <pre><code class="codeblock language-css">.div {
     transition-timing-function: ease; /* Default value, starts slow, fast in the middle, ends slow */
     transition-timing-function: ease-in-out; /* Like ease but more smooth */
     transition-timing-function: ease-in; /* Starts slow, then fast, then abrupt stop at the end */
@@ -132,7 +133,7 @@ h6 {
     transition-timing-function: linear; /* Same speed the entire transition */
 }            </code></pre>
              <h3>Sizing An Image To The Size Of Its Container</h3>
-             <pre class="prettyprint"><code class="codeblock lang-css">.container {
+             <pre><code class="codeblock language-css">.container {
     overflow: hidden;
 }
 .container img {
@@ -140,43 +141,51 @@ h6 {
     height: auto;
     display: block;
 }            </code></pre>
+            <h3>Open Graph Embeds</h3>
+            <pre><code class="codeblock language-html"><!--<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://www.webdevsplanet.com/post/add-website-to-bing-webmaster-tools">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Web Developers Planet">
+<meta property="og:title" content="How to add your website to Microsoft Bing Webmaster Tools | Web Developers Planet">
+<meta property="og:description" content="Bing Webmaster Tools is a free platform, and part of Microsoft's Bing search engine which allows webmasters to add their websites to the Bing index crawler, see their site's performance in Bing, and a lot more.">
+<meta property="og:image" content="https://www.webdevsplanet.com/assets/images/blog/add-website-to-bing-webmaster-tools.jpeg">--></code></pre>
         </section>
         <h2>Grid Properties</h2>
         <section>
             <h3>grid-template-rows and grid-template-columns</h3>
-            <p>Specifies the width and number of rows/columns. For example, <code class="inline">grid-template-columns: 20% 40px 60%;</code>.</p>
+            <p>Specifies the width and number of rows/columns. For example, <code class="language-css inline">grid-template-columns: 20% 40px 60%;</code>.</p>
             <h3>grid-template</h3>
-            <p>Shorthand property. Syntax is <code class="inline">grid-template: grid-template-rows / grid-template-columns;</code>.</p>
+            <p>Shorthand property. Syntax is <code class="language-css inline">grid-template: grid-template-rows / grid-template-columns;</code>.</p>
             <h3>fr unit</h3>
-            <p>Divides the remaining space. For example, <code class="inline">grid-template-rows: 1fr 20px 3fr;</code>. The middle row gets 20px, the first row gets 1/4 of the remaining space, and the third column gets 3/4 of the remaining space.</p>
+            <p>Divides the remaining space. For example, <code class="language-css inline">grid-template-rows: 1fr 20px 3fr;</code>. The middle row gets 20px, the first row gets 1/4 of the remaining space, and the third column gets 3/4 of the remaining space.</p>
             <h3>row-gap and column-gap</h3>
-            <p>Sets the gaps in the rows\columns. For example, <code class="inline">row-gap: 10px;</code>.</p>
+            <p>Sets the gaps in the rows\columns. For example, <code class="language-css inline">row-gap: 10px;</code>.</p>
             <h3>gap</h3>
-            <p>Shorthand for row-gap and column-gap. Syntax is <code class="inline">gap: row-gap column-gap;</code>. Alternatively, you can set both at once. For example, <code class="inline">gap: 20px;</code>. This sets the gap for both the rows and columns at the same time.</p>
+            <p>Shorthand for row-gap and column-gap. Syntax is <code class="language-css inline">gap: row-gap column-gap;</code>. Alternatively, you can set both at once. For example, <code class="language-css inline">gap: 20px;</code>. This sets the gap for both the rows and columns at the same time.</p>
             <h3>repeat() function</h3>
-            <p>Repeats a value a certain number of times. For example, <code class="inline">grid-template-columns: repeat(6, 50px);</code>. This makes 6 columns, all with width 50px. You can also repeat multiple values. For example. <code class="inline">grid-template-rows: repeat(2, 20px 50px);</code>. This is the same as saying <code class="inline">grid-template-rows: 20px 50px 20px 50px;</code>.</p>
+            <p>Repeats a value a certain number of times. For example, <code class="language-css inline">grid-template-columns: repeat(6, 50px);</code>. This makes 6 columns, all with width 50px. You can also repeat multiple values. For example. <code class="language-css inline">grid-template-rows: repeat(2, 20px 50px);</code>. This is the same as saying <code class="language-css inline">grid-template-rows: 20px 50px 20px 50px;</code>.</p>
             <h3>minmax() function</h3>
-            <p>Fills all remaining space without going below the minimum or above the maximum. Syntax is <code class="inline">minmax(minimum, maximum)</code>. For example, <code class="inline">grid-template-columns: 10px minmax(20px, 30px) 10px;</code>. This will make the first and third columns each 10px wide, and the middle column will fill remaining space as possible, but will never go under 20px or above 30px.</p>
+            <p>Fills all remaining space without going below the minimum or above the maximum. Syntax is <code class="language-css inline">minmax(minimum, maximum)</code>. For example, <code class="language-css inline">grid-template-columns: 10px minmax(20px, 30px) 10px;</code>. This will make the first and third columns each 10px wide, and the middle column will fill remaining space as possible, but will never go under 20px or above 30px.</p>
             <h3>grid-row-start and grid-column-start</h3>
-            <p>Unlike the other properties, this is put on a grid item instead of the grid container. It specifies what row/column the item should start on. For example, <code class="inline">grid-row-start: 2;</code>. This means that the topmost row of the grid item will be the 2nd row.</p>
+            <p>Unlike the other properties, this is put on a grid item instead of the grid container. It specifies what row/column the item should start on. For example, <code class="language-css inline">grid-row-start: 2;</code>. This means that the topmost row of the grid item will be the 2nd row.</p>
             <h3>grid-row-end and grid-column-end</h3>
-            <p>Is equal to one more than the last row/column for a grid item. For example, consider <code class="inline">grid-column-end: 4;</code>. In this example, the grid item will end on the column just before the 4th column, so it will end on the 3rd column.</p>
+            <p>Is equal to one more than the last row/column for a grid item. For example, consider <code class="language-css inline">grid-column-end: 4;</code>. In this example, the grid item will end on the column just before the 4th column, so it will end on the 3rd column.</p>
             <h3>span keyword</h3>
-            <p>Can be put on either grid-row-start or grid-row-end, but only one. It can also be put on either grid-column-start or grid-column end. It specifies how many rows/columns a grid item will span. For example, <code class="inline">grid-row-start: 3; grid-row-end: span 4;</code>. The grid item will start on row 3 and take up 4 rows total. So, it will take up rows 3, 4, 5 and 6. This is the same as saying <code class="inline">grid-row-start: 3; grid-row-end: 7;</code>.</p>
+            <p>Can be put on either grid-row-start or grid-row-end, but only one. It can also be put on either grid-column-start or grid-column end. It specifies how many rows/columns a grid item will span. For example, <code class="language-css inline">grid-row-start: 3; grid-row-end: span 4;</code>. The grid item will start on row 3 and take up 4 rows total. So, it will take up rows 3, 4, 5 and 6. This is the same as saying <code class="language-css inline">grid-row-start: 3; grid-row-end: 7;</code>.</p>
             <h3>grid-row and grid-column</h3>
-            <p>Shorthand properties for <code class="inline">grid-row: grid-row-start / grid-row-end;</code> and <code class="inline">grid-column: grid-column-start / grid-column-end;</code>.</p>
+            <p>Shorthand properties for <code class="language-css inline">grid-row: grid-row-start / grid-row-end;</code> and <code class="language-css inline">grid-column: grid-column-start / grid-column-end;</code>.</p>
             <h3>grid-area</h3>
-            <p>Shorthand for <code class="inline">grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;</code>.</p>
+            <p>Shorthand for <code class="language-css inline">grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;</code>.</p>
             <h3>justify-items and align-items</h3>
-            <p>Specifies how grid items will align themselves in their grid spaces. <code class="inline">justify-items</code> controls left to right, or the inline axis, and <code class="inline">align-items</code> controles up and down, or the block axis. Values are <code class="inline">stretch</code>, which is the default, <code class="inline">start</code>, which aligns to the top or left, <code class="inline">end</code>, which aligns to the bottom or right, and <code class="inline">center</code>, which aligns to the center.</p>
+            <p>Specifies how grid items will align themselves in their grid spaces. <code class="language-css inline">justify-items</code> controls left to right, or the inline axis, and <code class="language-css inline">align-items</code> controles up and down, or the block axis. Values are <code class="language-css inline">stretch</code>, which is the default, <code class="language-css inline">start</code>, which aligns to the top or left, <code class="language-css inline">end</code>, which aligns to the bottom or right, and <code class="language-css inline">center</code>, which aligns to the center.</p>
             <h3>justify-self and align-self</h3>
-            <p>Gives you the ability to control <code class="inline">justify-items</code> and <code class="inline">align-items</code> for a specific grid item. For example, <code class="inline">justify-self: end;</code>.</p>
+            <p>Gives you the ability to control <code class="language-css inline">justify-items</code> and <code class="language-css inline">align-items</code> for a specific grid item. For example, <code class="language-css inline">justify-self: end;</code>.</p>
             <h3>justify-content and align-content</h3>
-            <p>Only applies if the grid container is bigger than the grid itself. Controls where in the grid container the grid will go. Values are all of the values for <code class="inline">justify-items</code> and <code class="inline">align-items</code>, in addition to three more. <code class="inline">space-around</code> puts an equal amount of space around each row/column, resulting in an equal amount of space on each end and double that amount in between rows/columns. <code class="inline">space-between</code> puts an equal amount of space in between rows/columns, with no space on either end. Lastly, <code class="inline">space-evenly</code> puts the same amount of space on ends and in between rows/columns.</p>
+            <p>Only applies if the grid container is bigger than the grid itself. Controls where in the grid container the grid will go. Values are all of the values for <code class="language-css inline">justify-items</code> and <code class="language-css inline">align-items</code>, in addition to three more. <code class="language-css inline">space-around</code> puts an equal amount of space around each row/column, resulting in an equal amount of space on each end and double that amount in between rows/columns. <code class="language-css inline">space-between</code> puts an equal amount of space in between rows/columns, with no space on either end. Lastly, <code class="language-css inline">space-evenly</code> puts the same amount of space on ends and in between rows/columns.</p>
             <h3>grid-auto-flow</h3>
-            <p>Specifies where to put grid items if there isn't any space for them in the grid. This is called an implicit grid. Values are <code class="inline">row</code>, which fills unfilled rows and then creates new rows, <code class="inline">column</code>, which fills unfilled columns and then creates new columns, and <code class="inline">dense</code>, which attempts to fill any holes earlier in the grid if smaller elements are added. You can also combine <code class="inline">row</code> or <code class="inline">column</code> with <code class="inline">dense</code>. For example, <code class="inline">grid-auto-flow: column dense;</code>.</p>
+            <p>Specifies where to put grid items if there isn't any space for them in the grid. This is called an implicit grid. Values are <code class="language-css inline">row</code>, which fills unfilled rows and then creates new rows, <code class="language-css inline">column</code>, which fills unfilled columns and then creates new columns, and <code class="language-css inline">dense</code>, which attempts to fill any holes earlier in the grid if smaller elements are added. You can also combine <code class="language-css inline">row</code> or <code class="language-css inline">column</code> with <code class="language-css inline">dense</code>. For example, <code class="language-css inline">grid-auto-flow: column dense;</code>.</p>
             <h3>grid-auto-rows and grid-auto-columns</h3>
-            <p>Specifies the width of rows and columns added by <code class="inline">grid-auto-flow</code>. For example, <code class="inline">grid-auto-columns: 50px 20%;</code>. The first column added by <code class="inline">grid-auto-flow</code> will be 50px wide, the second will be 20%, the third will be 50px, and so on.</p>
+            <p>Specifies the width of rows and columns added by <code class="language-css inline">grid-auto-flow</code>. For example, <code class="language-css inline">grid-auto-columns: 50px 20%;</code>. The first column added by <code class="language-css inline">grid-auto-flow</code> will be 50px wide, the second will be 20%, the third will be 50px, and so on.</p>
         </section>
     </div>
 </body>
