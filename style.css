@@ -157,3 +157,25 @@ code::-webkit-scrollbar-thumb:active {
 .mono {
     font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 560px) {
+    nav {
+        text-align: center;
+        justify-content: center;
+        height: auto;
+    }
+    .color-theme {
+        padding-right: 0.75rem;
+    }
+    .color-container {
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-right: 0;
+    }
+    .color {
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+}
