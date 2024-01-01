@@ -158,6 +158,10 @@ code::-webkit-scrollbar-thumb:active {
     font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
+.copy-to-clipboard-button {
+    cursor: pointer;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 560px) {
     nav {
