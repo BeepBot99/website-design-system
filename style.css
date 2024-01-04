@@ -86,23 +86,14 @@ nav span {
 /* Code Snippet Styles */
 code {
     background-color: black !important;
-    color: var(--secondary-color);
-    padding: 0.7rem;
     overflow-x: auto;
-    display: block;
     border-radius: 5px;
-    white-space: nowrap;
     scrollbar-width: thin;
     scrollbar-color: #989898 #AEC2D3;
 }
 
 pre {
     padding: 0 !important;
-}
-
-code.inline {
-    display: inline;
-    padding: 0.25rem;
 }
 
 code::-webkit-scrollbar {
