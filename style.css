@@ -1,6 +1,7 @@
 /* Global Styles */
 * {
   box-sizing: border-box;
+  color: inherit;
 }
 
 :root {
@@ -137,7 +138,6 @@ code::-webkit-scrollbar-thumb:active {
 }
 
 /* Font Stack Styles */
-
 .sans-serif {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -165,6 +165,23 @@ code::-webkit-scrollbar-thumb:active {
   cursor: pointer;
 }
 
+/* Libraries Section Styles */
+.libraries-section > *:not(h3) {
+  margin-left: 1rem;
+}
+p.paragraph {
+  max-width: 100ch;
+  text-wrap: pretty;
+}
+
+img {
+  display: block;
+  max-width: 50ch;
+  box-sizing: content-box;
+  padding-left: 25ch;
+  aspect-ratio: 16 / 9;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 560px) {
   nav {
@@ -184,5 +201,8 @@ code::-webkit-scrollbar-thumb:active {
   .color {
     flex-grow: 0;
     flex-shrink: 0;
+  }
+  p {
+    text-align: center;
   }
 }
