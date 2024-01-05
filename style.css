@@ -177,8 +177,7 @@ p.paragraph {
 img {
   display: block;
   max-width: 50ch;
-  box-sizing: content-box;
-  padding-left: 25ch;
+  margin-left: calc(25ch + 1rem);
   aspect-ratio: 16 / 9;
 }
 
