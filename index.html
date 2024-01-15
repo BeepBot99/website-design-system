@@ -152,11 +152,18 @@ h6 {
 <meta property="og:title" content="Page Title">
 <meta property="og:description" content="Page Description">
 <meta property="og:image" content="Link to image"></script>
-        <h3>Prevent Caching of Website</h3>
+        <h3>Prevent Caching of HTML file</h3>
         <!-- prettier-ignore -->
         <script type="text/plain" class="codeblock language-html"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
 <meta http-equiv="Pragma" content="no-cache"/>
 <meta http-equiv="Expires" content="0"/></script>
+        <h3>Prevent Caching of Referenced Files</h3>
+        <!-- prettier-ignore -->
+        <script type="text/plain" class="codeblock language-html"><link rel="stylesheet" href="path/to/style.css?n=1" />
+<script src="path/to/index.js?n=1"><／script>
+<!-- Update parameter n every time you change the CSS or JavaScript file.
+You can also do this for other file types. For example, the src on an image.
+Furthermore, you can do it for a url() in CSS. --></script>
       </section>
       <h2>Libraries</h2>
       <section class="libraries-section">
