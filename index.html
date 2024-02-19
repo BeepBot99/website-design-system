@@ -1,123 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Davis's Design System</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-    <script src="libraries/prism.js/prism.js" defer></script>
-    <link rel="stylesheet" href="libraries/prism.js/prism.css" />
-    <link rel="stylesheet" href="libraries/normalize.css/normalize.css" />
-  </head>
-  <body>
-    <nav>
-      <span>Davis's Design System</span>
-    </nav>
-    <div class="content">
-      <h2>Color Themes</h2>
-      <section>
-        <div class="color-theme" data-theme="light">
-          <span>Blue | Light</span>
-          <div class="color-container">
-            <div class="color" data-color="#f2f5f8">F2F5F8</div>
-            <div class="color" data-color="#aec2d3">AEC2D3</div>
-            <div class="color" data-color="#788da3">788DA3</div>
-            <div class="color" data-color="#425773">425773</div>
-            <div class="color" data-color="#191f38">191F38</div>
-          </div>
-        </div>
-        <div class="color-theme" data-theme="dark">
-          <span>Blue | Dark</span>
-          <div class="color-container">
-            <div class="color" data-color="#070a0d">070A0D</div>
-            <div class="color" data-color="#192330">192330</div>
-            <div class="color" data-color="#2b3c53">2B3C53</div>
-            <div class="color" data-color="#566983">566983</div>
-            <div class="color" data-color="#8096b3">8096B3</div>
-          </div>
-        </div>
-        <div class="color-theme" data-theme="light">
-          <span>Pastel</span>
-          <div class="color-container">
-            <div class="color" data-color="#264653">264653</div>
-            <div class="color" data-color="#2a9d8f">2A9D8F</div>
-            <div class="color" data-color="#e9c46a">E9C46A</div>
-            <div class="color" data-color="#f4a261">F4A261</div>
-            <div class="color" data-color="#e76f51">E76F51</div>
-          </div>
-        </div>
-        <div class="color-theme" data-theme="light">
-          <span>Bubble Gum</span>
-          <div class="color-container">
-            <div class="color" data-color="#cdb4db">CDB4DB</div>
-            <div class="color" data-color="#ffc8dd">FFC8DD</div>
-            <div class="color" data-color="#ffafcc">FFAFCC</div>
-            <div class="color" data-color="#bde0fe">BDE0FE</div>
-            <div class="color" data-color="#a2d2ff">A2D2FF</div>
-          </div>
-        </div>
-        <div class="color-theme" data-theme="dark">
-          <span>Batman</span>
-          <div class="color-container">
-            <div class="color" data-color="#000814">000814</div>
-            <div class="color" data-color="#001d3d">001D3D</div>
-            <div class="color" data-color="#003566">003566</div>
-            <div class="color" data-color="#ffc300">FFC300</div>
-            <div class="color" data-color="#ffd60a">FFD60A</div>
-          </div>
-        </div>
-      </section>
-      <h2>Font Stacks</h2>
-      <section>
-        <h3>Sans Serif</h3>
-        <p class="sans-serif">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor sequi exercitationem expedita voluptates aperiam tempora quam,
-          recusandae minus repellat fuga numquam ducimus amet reiciendis eos.
-        </p>
-        <pre><code class="language-css">font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
-        <h3>Rounded Sans</h3>
-        <p class="rounded-sans">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores hic quaerat harum, quibusdam inventore nam animi obcaecati
-          cumque porro officia eos doloremque. Dolor, explicabo provident!
-        </p>
-        <pre><code class="language-css">font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;</code></pre>
-        <h3>Serif</h3>
-        <p class="serif">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit inventore explicabo accusamus architecto deserunt quidem
-          nihil odio reiciendis est expedita, eos, iusto porro obcaecati soluta!
-        </p>
-        <pre><code class="language-css">font-family: "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
-        <h3>Georgia</h3>
-        <p class="georgia">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempore, error nam dolore rem necessitatibus odit animi laboriosam
-          ratione ut odio iusto quaerat sint incidunt.
-        </p>
-        <pre><code class="language-css">font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;</code></pre>
-        <h3>Monospace</h3>
-        <p class="mono">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, perferendis ipsa officiis reprehenderit rem recusandae
-          necessitatibus non possimus dolor inventore sapiente repellat, saepe atque pariatur.
-        </p>
-        <pre><code class="language-css">font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;</code></pre>
-        <h3>Roboto Mono</h3>
-        <p class="roboto-mono">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis ducimus nostrum repellat! Sed ab officia vitae deleniti
-          molestiae aspernatur ipsam eveniet dolor! Adipisci, obcaecati.
-        </p>
-        <pre><code class="language-css">font-family: 'Roboto Mono', Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;</code></pre>
-      </section>
-      <h2>Styles</h2>
-      <section>
-        <h3>Center Child Element(s)</h3>
-        <pre><code class="codeblock language-css">.container {
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Davis's Design System</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js" defer></script>
+        <script src="libraries/prism.js/prism.js" defer></script>
+        <link rel="stylesheet" href="libraries/prism.js/prism.css" />
+        <link rel="stylesheet" href="libraries/normalize.css/normalize.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        <nav>
+            <span>Davis's Design System</span>
+        </nav>
+        <div class="content">
+            <h2>Color Themes</h2>
+            <section>
+                <div class="color-theme" data-theme="light">
+                    <span>Blue | Light</span>
+                    <div class="color-container">
+                        <div class="color" data-color="#f2f5f8">F2F5F8</div>
+                        <div class="color" data-color="#aec2d3">AEC2D3</div>
+                        <div class="color" data-color="#788da3">788DA3</div>
+                        <div class="color" data-color="#425773">425773</div>
+                        <div class="color" data-color="#191f38">191F38</div>
+                    </div>
+                </div>
+                <div class="color-theme" data-theme="dark">
+                    <span>Blue | Dark</span>
+                    <div class="color-container">
+                        <div class="color" data-color="#070a0d">070A0D</div>
+                        <div class="color" data-color="#192330">192330</div>
+                        <div class="color" data-color="#2b3c53">2B3C53</div>
+                        <div class="color" data-color="#566983">566983</div>
+                        <div class="color" data-color="#8096b3">8096B3</div>
+                    </div>
+                </div>
+                <div class="color-theme" data-theme="light">
+                    <span>Pastel</span>
+                    <div class="color-container">
+                        <div class="color" data-color="#264653">264653</div>
+                        <div class="color" data-color="#2a9d8f">2A9D8F</div>
+                        <div class="color" data-color="#e9c46a">E9C46A</div>
+                        <div class="color" data-color="#f4a261">F4A261</div>
+                        <div class="color" data-color="#e76f51">E76F51</div>
+                    </div>
+                </div>
+                <div class="color-theme" data-theme="light">
+                    <span>Bubble Gum</span>
+                    <div class="color-container">
+                        <div class="color" data-color="#cdb4db">CDB4DB</div>
+                        <div class="color" data-color="#ffc8dd">FFC8DD</div>
+                        <div class="color" data-color="#ffafcc">FFAFCC</div>
+                        <div class="color" data-color="#bde0fe">BDE0FE</div>
+                        <div class="color" data-color="#a2d2ff">A2D2FF</div>
+                    </div>
+                </div>
+                <div class="color-theme" data-theme="dark">
+                    <span>Batman</span>
+                    <div class="color-container">
+                        <div class="color" data-color="#000814">000814</div>
+                        <div class="color" data-color="#001d3d">001D3D</div>
+                        <div class="color" data-color="#003566">003566</div>
+                        <div class="color" data-color="#ffc300">FFC300</div>
+                        <div class="color" data-color="#ffd60a">FFD60A</div>
+                    </div>
+                </div>
+            </section>
+            <h2>Font Stacks</h2>
+            <section>
+                <h3>Sans Serif</h3>
+                <p class="sans-serif">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor sequi
+                    exercitationem expedita voluptates aperiam tempora quam, recusandae minus
+                    repellat fuga numquam ducimus amet reiciendis eos.
+                </p>
+                <pre><code class="language-css">font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
+                <h3>Rounded Sans</h3>
+                <p class="rounded-sans">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores hic quaerat
+                    harum, quibusdam inventore nam animi obcaecati cumque porro officia eos
+                    doloremque. Dolor, explicabo provident!
+                </p>
+                <pre><code class="language-css">font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;</code></pre>
+                <h3>Serif</h3>
+                <p class="serif">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit
+                    inventore explicabo accusamus architecto deserunt quidem nihil odio reiciendis
+                    est expedita, eos, iusto porro obcaecati soluta!
+                </p>
+                <pre><code class="language-css">font-family: "Iowan Old Style", "Apple Garamond", Baskerville, "Times New Roman", "Droid Serif", Times, "Source Serif Pro", serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";</code></pre>
+                <h3>Georgia</h3>
+                <p class="georgia">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempore, error
+                    nam dolore rem necessitatibus odit animi laboriosam ratione ut odio iusto
+                    quaerat sint incidunt.
+                </p>
+                <pre><code class="language-css">font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;</code></pre>
+                <h3>Monospace</h3>
+                <p class="mono">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, perferendis
+                    ipsa officiis reprehenderit rem recusandae necessitatibus non possimus dolor
+                    inventore sapiente repellat, saepe atque pariatur.
+                </p>
+                <pre><code class="language-css">font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;</code></pre>
+                <h3>Roboto Mono</h3>
+                <p class="roboto-mono">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis
+                    ducimus nostrum repellat! Sed ab officia vitae deleniti molestiae aspernatur
+                    ipsam eveniet dolor! Adipisci, obcaecati.
+                </p>
+                <pre><code class="language-css">font-family: 'Roboto Mono', Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;</code></pre>
+            </section>
+            <h2>Styles</h2>
+            <section>
+                <h3>Center Child Element(s)</h3>
+                <pre><code class="codeblock language-css">.container {
     display: flex;
     justify-content: center; /* Horizontally */
     align-items: center; /* Vertically */
     flex-direction: column; /* Only for multiple child elements stacked vertically */
 }           </code></pre>
-        <h3>Default Font Sizes</h3>
-        <pre><code class="codeblock language-css">h1 {
+                <h3>Default Font Sizes</h3>
+                <pre><code class="codeblock language-css">h1 {
     font-size: 2em;
 }
 h2 {
@@ -135,8 +142,8 @@ h5 {
 h6 {
     font-size: 0.7em;
 }           </code></pre>
-        <h3>Sizing An Image To The Size Of Its Container</h3>
-        <pre><code class="codeblock language-css">.container {
+                <h3>Sizing An Image To The Size Of Its Container</h3>
+                <pre><code class="codeblock language-css">.container {
     overflow: hidden;
 }
 .container img {
@@ -144,104 +151,147 @@ h6 {
     height: auto;
     display: block;
 }            </code></pre>
-        <h3>Open Graph Embeds</h3>
-        <!-- prettier-ignore -->
-        <script type="text/plain" class="codeblock language-html"><meta property="og:locale" content="en_US">
+                <h3>Open Graph Embeds</h3>
+                <!-- prettier-ignore -->
+                <script type="text/plain" class="codeblock language-html"><meta property="og:locale" content="en_US">
 <meta property="og:url" content="URL"> <!--Replace with the preferred URL for your website. For example, if the link shared has #asda, you can set this to something else and it will open without that.-->
 <meta property="og:site_name" content="Website Name">
 <meta property="og:title" content="Page Title">
 <meta property="og:description" content="Page Description">
 <meta property="og:image" content="Link to image"></script>
-        <h3>Prevent Caching of HTML file</h3>
-        <!-- prettier-ignore -->
-        <script type="text/plain" class="codeblock language-html"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+                <h3>Prevent Caching of HTML file</h3>
+                <!-- prettier-ignore -->
+                <script type="text/plain" class="codeblock language-html"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
 <meta http-equiv="Pragma" content="no-cache"/>
 <meta http-equiv="Expires" content="0"/></script>
-        <h3>Prevent Caching of Referenced Files</h3>
-        <!-- prettier-ignore -->
-        <script type="text/plain" class="codeblock language-html"><link rel="stylesheet" href="path/to/style.css?n=1" />
+                <h3>Prevent Caching of Referenced Files</h3>
+                <!-- prettier-ignore -->
+                <script type="text/plain" class="codeblock language-html"><link rel="stylesheet" href="path/to/style.css?n=1" />
 <script src="path/to/index.js?n=1"><／script>
 <!-- Update parameter n every time you change the CSS or JavaScript file.
 You can also do this for other file types. For example, the src on an image.
 Furthermore, you can do it for a url() in CSS. --></script>
-      </section>
-      <h2>Libraries</h2>
-      <section class="libraries-section">
-        <h3><a href="https://prismjs.com" target="_blank">Prism.js</a></h3>
-        <p class="paragraph">
-          Prism.js is a library for formatting code snippets. It is better than its competitors for a few reasons. First of all, it
-          recognizes syntax a lot better, especially with newer syntax. Second of all, it uses smaller files and has quicker loading times.
-          Furthermore, Prism.js makes it very easy to customize the styles, unlike some other formatting libraries. Lastly, it has loads of
-          plugins, developed by both the people who made it and the community, and you can even make your own plugin if you want. The code
-          snippets on this website were even formatted with Prism.js!
-        </p>
-        <a href="https://prismjs.com" target="_blank">
-          <img src="assets/images/prism-js-screenshot.jpg" alt="A Screenshot of the Homepage of Prism.js" />
-        </a>
-        <h3><a href="https://necolas.github.io/normalize.css" target="_blank">Normalize.css</a></h3>
-        <p class="paragraph">
-          Different browsers have different default CSS styles. One thing you can do to change this is by adding a CSS reset. A CSS reset
-          can be as simple as <code class="inline language-css">body {margin: 0; padding: 0}</code>, or it can be really advanced.
-          Normalize.css is a CSS reset that makes every default CSS property the same on every browser, but it doesn't change anything that
-          is consistent across browsers. That way, you don't have to worry about your website looking different on another browser,
-          especially Internet Explorer. In addition, unlike other libraries, it is very easy to read and understand the code, and is very
-          well commented.
-        </p>
-        <a href="https://necolas.github.io/normalize.css" target="_blank">
-          <img src="assets/images/normalize-css-screenshot.jpg" alt="A Screenshot of the Homepage of normalize.css" />
-        </a>
-        <h3><a href="https://ianlunn.github.io/Hover/" target="_blank">Hover.css</a></h3>
-        <p class="paragraph">
-          Have you ever seen a cool hover effect but didn't know how to replicate it? Or have you wanted to put really cool hover effects on
-          your buttons? If, so you should check out Hover.css. They have over 50 hover effects for buttons, and all you have to do to add
-          one is put a class on your button! Although it is primarily used for buttons, you can put it on any element that you want to apply
-          a hover affect to. When I first found out about this, I was so amazed because I had seen all those hover effects before, and I
-          could finally put them on my websites!
-        </p>
-        <a href="https://ianlunn.github.io/Hover/" target="_blank">
-          <img src="assets/images/hover-css-screenshot.jpg" alt="A Screenshot of the Homepage of Hover.css" />
-        </a>
-        <h3><a href="https://animate.style/" target="_blank">Animate.css</a></h3>
-        <p class="paragraph">
-          When I first found out about Animate.css, I thought, "This is useless. You can already do all of this with CSS animations." Then,
-          I started looking at the demos. You can use one CSS property for basically any animation you want to make! It can make it slide in
-          and out, bounce around, and even turn to jello! Moreover, you can control the timing just like you can with the built-in CSS
-          animations. If you ever need any CSS animations, simple or complicated, I would recommend using Animate.css.
-        </p>
-        <a href="https://animate.style/" target="_blank">
-          <img src="assets/images/animate-css-screenshot.jpg" alt="A Screenshot of the Homepage of Animate.css" />
-        </a>
-        <h3><a href="https://safi.me.uk/typewriterjs/" target="_blank">Typewriter.js</a></h3>
-        <p class="paragraph">
-          Have you ever seen those cool typing effects on websites that you've come across? Have you wanted to make your own ones?
-          Typewriter.js makes this easier than ever before. It has built in callback functions to type, set delays, and delete all or part
-          of a word. You can even put other elements inside, like <code class="inline language-html"><!--<b>--></code>.
-        </p>
-        <a href="https://safi.me.uk/typewriterjs/" target="_blank">
-          <img src="assets/images/typewriter-js-screenshot.jpg" alt="A Screenshot of the Homepage of Typewriter.js" />
-        </a>
-        <h3><a href="https://michalsnik.github.io/aos/" target="_blank">Animate on Scroll</a></h3>
-        <p class="paragraph">
-          With the new CSS <code class="inline language-css">scroll()</code> and <code class="inline language-css">view()</code>, this might
-          seem like it has no purpose of being its own library. However, once you look at the demo page, you'll see that you were wrong. It
-          does the same things as you can do in CSS, but quicker, cleaner, and a lot more easily. All you have to do is to add a class, and
-          boom, when it scrolls into view, it will have whatever animation you want! In addition, you can add more classes to customize it
-          even more.
-        </p>
-        <a href="https://michalsnik.github.io/aos" target="_blank">
-          <img src="assets/images/aos-screenshot.jpg" alt="A Screenshot of the Homepage of Animate on Scroll." />
-        </a>
-        <h3><a href="https://sweetalert2.github.io/" target="_blank">SweetAlert2</a></h3>
-        <p class="paragraph">
-          Sometimes, I want to use the JavaScript <code class="inline language-javascript">alert()</code> on my websites, but I am worried
-          about using it because it doesn't look good on most browsers. SweetAlert2 attempts to fix this problem. It makes good-looking,
-          customizable alerts. It can be called as easily as <code class="inline language-javascript">alert()</code>, but looks much better
-          and has much, much more options. It even lets you put HTML code in the alerts!
-        </p>
-        <a href="https://sweetalert2.github.io/" target="_blank">
-          <img src="assets/images/sweetalert2-screenshot.jpg" alt="A Screenshot of the Homepage of SweetAlert2" />
-        </a>
-      </section>
-    </div>
-  </body>
+            </section>
+            <h2>Libraries</h2>
+            <section class="libraries-section">
+                <h3><a href="https://prismjs.com" target="_blank">Prism.js</a></h3>
+                <p class="paragraph">
+                    Prism.js is a library for formatting code snippets. It is better than its
+                    competitors for a few reasons. First of all, it recognizes syntax a lot better,
+                    especially with newer syntax. Second of all, it uses smaller files and has
+                    quicker loading times. Furthermore, Prism.js makes it very easy to customize the
+                    styles, unlike some other formatting libraries. Lastly, it has loads of plugins,
+                    developed by both the people who made it and the community, and you can even
+                    make your own plugin if you want. The code snippets on this website were even
+                    formatted with Prism.js!
+                </p>
+                <a href="https://prismjs.com" target="_blank">
+                    <img
+                        src="assets/images/prism-js-screenshot.jpg"
+                        alt="A Screenshot of the Homepage of Prism.js" />
+                </a>
+                <h3>
+                    <a href="https://necolas.github.io/normalize.css" target="_blank"
+                        >Normalize.css</a
+                    >
+                </h3>
+                <p class="paragraph">
+                    Different browsers have different default CSS styles. One thing you can do to
+                    change this is by adding a CSS reset. A CSS reset can be as simple as
+                    <code class="inline language-css">body {margin: 0; padding: 0}</code>, or it can
+                    be really advanced. Normalize.css is a CSS reset that makes every default CSS
+                    property the same on every browser, but it doesn't change anything that is
+                    consistent across browsers. That way, you don't have to worry about your website
+                    looking different on another browser, especially Internet Explorer. In addition,
+                    unlike other libraries, it is very easy to read and understand the code, and is
+                    very well commented.
+                </p>
+                <a href="https://necolas.github.io/normalize.css" target="_blank">
+                    <img
+                        src="assets/images/normalize-css-screenshot.jpg"
+                        alt="A Screenshot of the Homepage of normalize.css" />
+                </a>
+                <h3><a href="https://ianlunn.github.io/Hover/" target="_blank">Hover.css</a></h3>
+                <p class="paragraph">
+                    Have you ever seen a cool hover effect but didn't know how to replicate it? Or
+                    have you wanted to put really cool hover effects on your buttons? If, so you
+                    should check out Hover.css. They have over 50 hover effects for buttons, and all
+                    you have to do to add one is put a class on your button! Although it is
+                    primarily used for buttons, you can put it on any element that you want to apply
+                    a hover affect to. When I first found out about this, I was so amazed because I
+                    had seen all those hover effects before, and I could finally put them on my
+                    websites!
+                </p>
+                <a href="https://ianlunn.github.io/Hover/" target="_blank">
+                    <img
+                        src="assets/images/hover-css-screenshot.jpg"
+                        alt="A Screenshot of the Homepage of Hover.css" />
+                </a>
+                <h3><a href="https://animate.style/" target="_blank">Animate.css</a></h3>
+                <p class="paragraph">
+                    When I first found out about Animate.css, I thought, "This is useless. You can
+                    already do all of this with CSS animations." Then, I started looking at the
+                    demos. You can use one CSS property for basically any animation you want to
+                    make! It can make it slide in and out, bounce around, and even turn to jello!
+                    Moreover, you can control the timing just like you can with the built-in CSS
+                    animations. If you ever need any CSS animations, simple or complicated, I would
+                    recommend using Animate.css.
+                </p>
+                <a href="https://animate.style/" target="_blank">
+                    <img
+                        src="assets/images/animate-css-screenshot.jpg"
+                        alt="A Screenshot of the Homepage of Animate.css" />
+                </a>
+                <h3>
+                    <a href="https://safi.me.uk/typewriterjs/" target="_blank">Typewriter.js</a>
+                </h3>
+                <p class="paragraph">
+                    Have you ever seen those cool typing effects on websites that you've come
+                    across? Have you wanted to make your own ones? Typewriter.js makes this easier
+                    than ever before. It has built in callback functions to type, set delays, and
+                    delete all or part of a word. You can even put other elements inside, like
+                    <code class="inline language-html"><!--<b>--></code>.
+                </p>
+                <a href="https://safi.me.uk/typewriterjs/" target="_blank">
+                    <img
+                        src="assets/images/typewriter-js-screenshot.jpg"
+                        alt="A Screenshot of the Homepage of Typewriter.js" />
+                </a>
+                <h3>
+                    <a href="https://michalsnik.github.io/aos/" target="_blank"
+                        >Animate on Scroll</a
+                    >
+                </h3>
+                <p class="paragraph">
+                    With the new CSS <code class="inline language-css">scroll()</code> and
+                    <code class="inline language-css">view()</code>, this might seem like it has no
+                    purpose of being its own library. However, once you look at the demo page,
+                    you'll see that you were wrong. It does the same things as you can do in CSS,
+                    but quicker, cleaner, and a lot more easily. All you have to do is to add a
+                    class, and boom, when it scrolls into view, it will have whatever animation you
+                    want! In addition, you can add more classes to customize it even more.
+                </p>
+                <a href="https://michalsnik.github.io/aos" target="_blank">
+                    <img
+                        src="assets/images/aos-screenshot.jpg"
+                        alt="A Screenshot of the Homepage of Animate on Scroll." />
+                </a>
+                <h3><a href="https://sweetalert2.github.io/" target="_blank">SweetAlert2</a></h3>
+                <p class="paragraph">
+                    Sometimes, I want to use the JavaScript
+                    <code class="inline language-javascript">alert()</code> on my websites, but I am
+                    worried about using it because it doesn't look good on most browsers.
+                    SweetAlert2 attempts to fix this problem. It makes good-looking, customizable
+                    alerts. It can be called as easily as
+                    <code class="inline language-javascript">alert()</code>, but looks much better
+                    and has much, much more options. It even lets you put HTML code in the alerts!
+                </p>
+                <a href="https://sweetalert2.github.io/" target="_blank">
+                    <img
+                        src="assets/images/sweetalert2-screenshot.jpg"
+                        alt="A Screenshot of the Homepage of SweetAlert2" />
+                </a>
+            </section>
+        </div>
+    </body>
 </html>
